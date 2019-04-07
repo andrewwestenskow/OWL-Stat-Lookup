@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import HeroStats from './HeroStats';
 
 class MainBody extends Component {
 
@@ -14,7 +15,9 @@ class MainBody extends Component {
       <div className="MainBody">
         <div className="PictureMainStats">
           <div className="HeadshotStats">
-            <img className='PlayerImage' src={this.props.player.headshot} alt={this.props.player.name}/>
+            <img className='PlayerImage' 
+            src={this.props.player.headshot} 
+            alt={this.props.player.name}/>
             <div className="MainStats">
               <div className="StatSelector">
                 <span>Select Season:  </span> 
@@ -47,6 +50,8 @@ class MainBody extends Component {
             <h2>{this.props.attributes.role}</h2>
           </div>
         </div>
+
+        <HeroStats heroStats={this.props.heroStats}/>
       </div>
     )
   }
