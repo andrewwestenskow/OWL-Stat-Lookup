@@ -6,6 +6,7 @@ import Functions from './Components/Functions';
 import Header from './Components/Styling/Header'
 import PlayerFunctions from './Components/PlayerPages/PlayerFunctions'
 
+
 class App extends Component {
     
   state = {
@@ -69,6 +70,7 @@ class App extends Component {
         <Header/>
         <div className="ClearBox">
           {showStats}
+          
         </div>
         
       </div>

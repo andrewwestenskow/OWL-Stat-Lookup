@@ -196,6 +196,14 @@
   margin-right: 10px;
 }
 
+/* HERO STATS  */
+
+.HeroStats{
+  border: 2px solid black;
+  width: inherit;
+  margin: 5px 0;
+}
+
 
 
 

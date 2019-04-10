@@ -23,7 +23,6 @@ class PlayerFunction extends Component {
         player: showPlayer.player,
         statRanks: showPlayer.statRanks,
         stats: showPlayer.stats.all,
-        heroStats: showPlayer.stats.heroes,
         team: showPlayer.player.teams[0].team,
         attributes: showPlayer.player.attributes
       })
@@ -74,7 +73,9 @@ class PlayerFunction extends Component {
       stats={this.state.stats} 
       heroStats={this.state.heroStats}
       statRanks={this.state.statRanks}
-      seasonSwitch={this.seasonSwitch}/>
+      seasonSwitch={this.seasonSwitch}
+      season={this.state.season}
+      playerToShow={this.props.playerToShow}/>
 
 
       <button onClick={() => this.props.showFalse()} >Go Back</button>

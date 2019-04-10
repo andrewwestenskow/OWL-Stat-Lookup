@@ -3,6 +3,7 @@ import HeroStats from './HeroStats';
 
 class MainBody extends Component {
 
+  
 
   seasonSwitch = (e) => {
 
@@ -11,6 +12,7 @@ class MainBody extends Component {
 
   render(){
 
+  
     return(
       <div className="MainBody">
         <div className="PictureMainStats">
@@ -50,8 +52,7 @@ class MainBody extends Component {
             <h2>{this.props.attributes.role}</h2>
           </div>
         </div>
-
-        <HeroStats heroStats={this.props.heroStats}/>
+        <HeroStats playerToShow={this.props.playerToShow} season={this.props.season}/>
       </div>
     )
   }
